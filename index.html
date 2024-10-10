@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	
+	<link rel="stylesheet" href="calculator.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head> 
+<body> 
+	<h1 id="title"> Calculator</h1>
+	<p id="description"> Hello , This calculator is coded using HTML,CSS,JS .This calculator can perform Basic arithmatic calculations. </p>
+	<form >
+	<table id="calculator"> 
+		<tr> 
+			<td colspan="4"> 
+				<div id="output">
+					<input type="text" id='result' disabled>
+				 </div>
+	  
+			</td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value='C' onclick="Clear()" id="clear"></td> 
+			<td><input type="button" value='<-' onclick="Back()" id="back"></td> 
+			<td><input type="button" value='%' onclick="Solve('%')" id ="modulus"></td> 
+			<td><input type="button" value='X' onclick="Solve('*')" id="multipli"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value='7' onclick="Solve('7')" ></td> 
+			<td><input type="button" value="8" onclick="Solve('8')" ></td> 
+			<td><input type="button" value="9" onclick="Solve('9')" ></td> 
+			<td><input type="button" value="/" onclick="Solve('/')" id="division"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4" onclick="Solve('4')" ></td> 
+			<td><input type="button" value="5" onclick="Solve('5')" ></td> 
+			<td><input type="button" value="6" onclick="Solve('6')" ></td> 
+			<td><input type="button" value="-" onclick="Solve('-')" id ="subtract"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="1" onclick="Solve('1')" ></td> 
+			<td><input type="button" value="2" onclick="Solve('2')" ></td> 
+			<td><input type="button" value="3" onclick="Solve('3')" ></td> 
+			<td><input type="button" value="+" onclick="Solve('+')" id="add"></td> 
+		</tr> 
+		<tr>
+			<td><input type="button" value="0" onclick="Solve('0')" ></td>
+			<td><input type="button" value="00" onclick="Solve('00')" id="numbers"></td>
+			<td><input type="button" value="." onclick="Solve('.')" id="decimal "></td>
+			<td colspan=""><input type="button" value="=" onclick="Result()" id="result"></td>
+		</tr>	
+	</table> 
+</form>
+	<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+	<script src="calculator.js"> </script>
+
+</body> 
+</html> 
